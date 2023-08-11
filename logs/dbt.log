@@ -1,0 +1,56 @@
+[0m17:49:23.804934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061f9c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105df6e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d05f50>]}
+
+
+============================== 17:49:23.807022 | f0200c68-4552-4768-b4a9-aa089b21c18e ==============================
+[0m17:49:23.807022 [info ] [MainThread]: Running with dbt=1.5.4
+[0m17:49:23.807330 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/jemendoza/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m17:49:23.807882 [debug] [MainThread]: Starter project path: /Users/jemendoza/Desktop/Study/dbt/course/venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m17:49:33.540812 [debug] [MainThread]: Command `dbt init` succeeded at 17:49:33.538124 after 9.74 seconds
+[0m17:49:33.541980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106021890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061f9c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10232c450>]}
+[0m17:49:33.542761 [debug] [MainThread]: Flushing usage events
+[0m09:29:51.370789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107df01d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d27f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d4e0d0>]}
+
+
+============================== 09:29:51.373037 | f853a361-495c-4ce5-8109-558b98aa6276 ==============================
+[0m09:29:51.373037 [info ] [MainThread]: Running with dbt=1.5.4
+[0m09:29:51.373351 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jemendoza/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m09:29:51.373630 [info ] [MainThread]: dbt version: 1.5.4
+[0m09:29:51.373791 [info ] [MainThread]: python version: 3.11.4
+[0m09:29:51.373957 [info ] [MainThread]: python path: /Users/jemendoza/Desktop/Study/dbt/course/venv/bin/python3
+[0m09:29:51.374103 [info ] [MainThread]: os info: macOS-13.4.1-arm64-arm-64bit
+[0m09:29:51.374245 [info ] [MainThread]: Using profiles.yml file at /Users/jemendoza/.dbt/profiles.yml
+[0m09:29:51.374399 [info ] [MainThread]: Using dbt_project.yml file at /Users/jemendoza/Desktop/Study/dbt/course/dbt_project.yml
+[0m09:29:51.374530 [info ] [MainThread]: Configuration:
+[0m09:29:51.472587 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:29:51.472856 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:29:51.473012 [info ] [MainThread]: Required dependencies:
+[0m09:29:51.473189 [debug] [MainThread]: Executing "git --help"
+[0m09:29:51.479239 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:29:51.479678 [debug] [MainThread]: STDERR: "b''"
+[0m09:29:51.479825 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:29:51.479980 [info ] [MainThread]: Connection:
+[0m09:29:51.480179 [info ] [MainThread]:   account: erxupyu-sa33445
+[0m09:29:51.480316 [info ] [MainThread]:   user: dbt
+[0m09:29:51.480443 [info ] [MainThread]:   database: AIRBNB
+[0m09:29:51.480569 [info ] [MainThread]:   schema: DEV
+[0m09:29:51.480693 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m09:29:51.480814 [info ] [MainThread]:   role: transform
+[0m09:29:51.480938 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:29:51.481061 [info ] [MainThread]:   query_tag: None
+[0m09:29:51.481434 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m09:29:51.483808 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:29:51.484546 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:29:51.484702 [debug] [MainThread]: On debug: select 1 as id
+[0m09:29:51.484818 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:29:52.628059 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m09:29:52.631011 [debug] [MainThread]: On debug: Close
+[0m09:29:52.852627 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:29:52.853422 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:29:52.853862 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m09:29:52.854778 [debug] [MainThread]: Command `dbt debug` failed at 09:29:52.854600 after 1.49 seconds
+[0m09:29:52.855267 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:29:52.855722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107dba350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081b7690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b30c90>]}
+[0m09:29:52.856261 [debug] [MainThread]: Flushing usage events

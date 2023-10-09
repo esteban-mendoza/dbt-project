@@ -1,7 +1,8 @@
-{{
+{{ 
     config(
-        materialized="table",
-    )
+        materialized="view",
+        schema="DERIVED",
+    ) 
 }}
 
 with

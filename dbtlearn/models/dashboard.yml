@@ -1,7 +1,7 @@
 version: 2
 
 exposures:
-  - name: Sentiment Dashboard
+  - name: sentiment_dashboard
     type: dashboard
     maturity: low
     url: https://f9b12ab6.us2a.app.preset.io/superset/dashboard/p/r5v19Z0Lxkd/

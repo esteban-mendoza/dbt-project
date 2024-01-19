@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+  - name: sentiment_dashboard
+    type: dashboard
+    maturity: low
+    url: https://f9b12ab6.us2a.app.preset.io/superset/dashboard/p/r5v19Z0Lxkd/
+    description: Sentiment dashboard for the Full Moon Reviews dataset
+      
+
+    depends_on:
+      - ref('full_moon_reviews')
+
+    owner:
+      name: Jorge Mendoza
+      email: hello@learndbt.com
